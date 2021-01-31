@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">personal survey form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <main id="main">
+        <form id="survey-form">
+            <div class="form-wrapper">
+                <label for="name" id="name-label" style="position: relative; top: 10px;">Name</label>
+                <br>
+                <br>
+                <div>
+                    <input type="text" id="name" name="name" class="input-field" placeholder="enter your name..." required>
+                </div>
+                <label for="email" id="email-label" style="position: relative; top: 10px;">Email</label>
+                <br>
+                <br>
+                <div>
+                    <input type="email" id="email" name="email" class="input-field" placeholder="enter your email..." required>
+                </div>
+                <label for="number" id="number-label" style="position: relative; top: 10px;">Age(optional)</label>
+                <br>
+                <br>
+                <div>
+                    <input type="number" id="number" id="number" class="input-field" placeholder="enter your age..." min="5" max="10" required>
+                </div>
+                <label for="dropdown" style="position: relative; top: 15px;" id="ac">Which online academy do you like <b style="display: none;">the most?</b></label>
+                <div>
+                    <select name="dropdown" id="dropdown">
+                        <option value="">choose one option</option>
+                        <option value="free_code_camp">FreeCodeCamp</option>
+                        <option value="udemy">Udemy</option>
+                        <option value="code_cademy">CodeCademy</option>
+                        <option value="udacity">Udacity</option>
+                    </select>
+                </div>
+                <p style="position: relative; top: 45px;" class="desc">Which option best describes your current role?</p>
+                <div class="radio-container">
+                    <input type="radio" id="student" name="choose" value="student">
+                    <label for="student" style="position: relative; bottom: 5px; left: 5px;">Student</label>
+                    <br>
+                    <br>
+                    <input type="radio" id="full_time_job" name="choose" value="full_time_job">
+                    <label for="full_time_job" style="position: relative; bottom: 5px; left: 5px;">Full time job</label>
+                    <br>
+                    <br>
+                    <input type="radio" id="full_time_learner" name="choose" value="full_time_learner">
+                    <label for="full_time_learner" style="position: relative; bottom: 5px; left: 5px;">Full time learner</label>
+                </div>
+                <p style="position: relative; top: 45px;" class="desc-2">What do you like in programming?</p>
+                <div class="check-container">
+                    <input type="checkbox" id="challenges" name="choose" value="challenges">
+                    <label for="challenges" style="position: relative; left: 5px; bottom: 5px;">challanges</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="prjects" name="choose" value="projects">
+                    <label for="challenges" style="position: relative; left: 5px; bottom: 5px;">projects</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="community" name="choose" value="community">
+                    <label for="challenges" style="position: relative; left: 5px; bottom: 5px;">community</label>
+                </div>
+                <p class="comment-desc">Any comments or suggestions?</p>
+                <textarea placeholder="messege..." id="comment"></textarea>
+                <div class="btn-container">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
